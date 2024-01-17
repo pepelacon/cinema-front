@@ -5,7 +5,7 @@ import { FC } from 'react'
 const Home: FC<IHome> = () => {
 	return (
 		<Layout>
-			<div>Home</div>
+			<></>
 		</Layout>
 	)
 }
