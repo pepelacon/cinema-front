@@ -1,11 +1,19 @@
-import { NextPage } from 'next'
+import MainProvider from '../app/providers/MainProvider'
+import type { AppProps } from 'next/app'
 import Home from './components/screens/home/Home'
 
-const HomePage: NextPage = () => {
+// import { TypeComponentAuthFields } from '@/shared/types/auth.types'
+
+// import '../app/assets/styles/globals.scss'
+
+type TypeAppProps = AppProps
+
+const MyApp = ({ Component, pageProps }: TypeAppProps) => {
 	return (
-		<main className="flex min-h-screen flex-col items-center justify-between p-24">
+		<MainProvider>
 			<Home />
-		</main>
+		</MainProvider>
 	)
 }
-export default HomePage
+
+export default MyApp

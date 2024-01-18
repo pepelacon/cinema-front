@@ -26,7 +26,7 @@ export const firstMenu: IMenu = {
 	],
 }
 
-const userMenu: IMenu = {
+export const userMenu: IMenu = {
 	title: 'General',
 	items: [],
 }

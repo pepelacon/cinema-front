@@ -6,7 +6,7 @@ import { usePathname } from 'next/navigation'
 
 import { FC } from 'react'
 
-import { MaterialIcon } from '@/ui/icons/MaterialIcon'
+import MaterialIcon from '@/ui/icons/MaterialIcon'
 
 import styles from './Menu.module.scss'
 import { IMenuItem } from './menu.interface'
