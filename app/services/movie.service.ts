@@ -5,7 +5,7 @@ import { IMovie } from '@/shared/types/movie.types'
 import { getMoviesUrl } from '@/configs/api.config'
 
 export const MovieService = {
-	async getMovies(searchTerm?: string) {
+	async getAll(searchTerm?: string) {
 		return axiosClassic.get<IMovie[]>(getMoviesUrl(``), {
 			params: searchTerm
 				? {
@@ -13,5 +13,13 @@ export const MovieService = {
 					}
 				: {},
 		})
+	},
+
+	async getMostPopularMovies() {
+		const { data: movies } = await axiosClassic.get<IMovie[]>(
+			getMoviesUrl('/most-popular')
+		)
+
+		return movies
 	},
 }

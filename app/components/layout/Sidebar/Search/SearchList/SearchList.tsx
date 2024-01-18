@@ -10,17 +10,17 @@ const SearchList: FC<{ movies: IMovie[] }> = ({ movies }) => {
 			{movies.length ? (
 				movies.map((movie) => (
 					<Link legacyBehavior key={movie._id} href={`/movie/${movie.slug}`}>
-						<a>
-							<Image
-								src={movie.poster || ''}
-								width={50}
-								height={50}
-								objectFit="cover"
-								objectPosition="top"
-								alt={movie.title}
-								draggable={false}
-							/>
-							<span>{movie.title}</span>
+						<a className="flex items-center py-3 px-4 relative">
+							<div className="relative w-16 h-16 rounded-layout overflow-hidden">
+								<Image
+									src={movie.poster || ''}
+									layout="fill"
+									objectFit="cover"
+									alt={movie.title}
+									draggable={false}
+								/>
+							</div>
+							<span className="ml-3 text-white truncate">{movie.title}</span>
 						</a>
 					</Link>
 				))

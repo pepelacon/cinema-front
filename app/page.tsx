@@ -1,4 +1,4 @@
-import MainProvider from '../app/providers/MainProvider'
+import MainProvider from './providers/MainProvider'
 import type { AppProps } from 'next/app'
 import Home from './components/screens/home/Home'
 
@@ -8,7 +8,7 @@ import Home from './components/screens/home/Home'
 
 type TypeAppProps = AppProps
 
-const MyApp = ({ Component, pageProps }: TypeAppProps) => {
+const MyApp = () => {
 	return (
 		<MainProvider>
 			<Home />
