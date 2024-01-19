@@ -3,7 +3,7 @@
 import { FC } from 'react'
 import Head from 'next/head'
 import { usePathname } from 'next/navigation'
-import { useRouter } from 'next/navigation'
+
 import { siteName, titleMerge } from '@/configs/seo.config'
 import { onlyText } from '../string/clearText'
 import { ISeo } from './meta.interface'

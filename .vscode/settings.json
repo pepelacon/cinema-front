@@ -3,6 +3,12 @@
     "autorize",
     "Favotite",
     "Imenu",
-    "tailwindcss"
+    "msapplication",
+    "navbutton",
+    "nextjs",
+    "reduxjs",
+    "succses",
+    "tailwindcss",
+    "Toastr"
   ]
 }
